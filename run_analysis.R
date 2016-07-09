@@ -140,12 +140,12 @@ labelVariableName <- function() {
   
   descVariableName <<- as.character(colLabelName[filteredColIndex])
   descVariableName <<- lapply(descVariableName, function(x){
-    temp = x
-    temp = str_replace(temp, "tBody", "Time-Body")
-    temp = str_replace(temp, "fBody", "Freq-Body") 
-    temp = str_replace(temp, "mean", "Mean") 
-    temp = str_replace(temp, "std", "Std")
-    temp = str_replace(temp, "tGravity", "Time-Gravity")
+    temp <- x
+    temp <- str_replace(temp, "tBody", "Time-Body")
+    temp <- str_replace(temp, "fBody", "Freq-Body") 
+    temp <- str_replace(temp, "mean", "Mean") 
+    temp <- str_replace(temp, "std", "Std")
+    temp <- str_replace(temp, "tGravity", "Time-Gravity")
     
     return(temp)
   })
